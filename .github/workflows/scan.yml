@@ -2,6 +2,12 @@ name: Docker Scout
 
 on:
   workflow_dispatch:
+    inputs:
+      docker_image:
+      description: 'The Docker image to scan'
+      required: true
+      default: 'appsecco/dvna:sqlite'
+
 
 jobs:
   dscout:

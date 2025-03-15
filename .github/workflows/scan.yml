@@ -55,6 +55,9 @@ jobs:
       - name: Filter SARIF file
         uses: advanced-security/filter-sarif@v1
         with:
+          patterns: |
+            +**/*.java
+            -**/*Test*.java
           input: sca_scout.sarif
           output: sca_scout.sarif
           

@@ -55,8 +55,8 @@ jobs:
       - name: Filter SARIF file
         uses: advanced-security/filter-sarif@v1
         with:
-          inputs: sca_scout.sarif
-          outputs: sca_scout.sarif
+          input: sca_scout.sarif
+          output: sca_scout.sarif
           
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v3

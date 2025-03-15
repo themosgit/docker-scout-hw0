@@ -53,4 +53,4 @@ jobs:
           category: Security/sca_scout
 
       - name: SBOM upload
-        uses: advanced-security/spdx-depedency-submission-action@v0.1.1
+        uses: advanced-security/spdx-dependency-submission-action@v0.1.1

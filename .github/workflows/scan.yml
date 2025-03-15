@@ -6,7 +6,7 @@ on:
     inputs:
       docker_image:
         required: true
-        default: 'vencerems/hw0-test:latest'
+        default: 'vencerems/hw0-test'
   
 
 jobs:

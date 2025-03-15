@@ -1,6 +1,9 @@
 name: Docker Scout
 
 on:
+
+  workflow_dispatch:
+  
   push:
     tags: ["*"]
     branches:

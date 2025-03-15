@@ -3,13 +3,11 @@ name: Docker Scout
 on:
 
   workflow_dispatch:
+    inputs:
+      docker_image:
+        required: true
+        default: 'vencerems/hw0-test:latest'
   
-  push:
-    tags: ["*"]
-    branches:
-      - "main"
-  pull_request:
-    branches: ["**"]
 
 jobs:
   dscout:
